@@ -27,7 +27,7 @@ function makePromiseCall(methodType, url, async=true, data=null){
 const getURL = "http://localhost:3000/employees/1";
 makePromiseCall("GET", getURL, true)
                .then(responseText => {
-                    console.log("user deleted : "+ responseText)
+                    console.log("get user data : "+ responseText)
                 })
                .catch(error => console.log("get error status : "+ JSON.stringify(error)));
 
